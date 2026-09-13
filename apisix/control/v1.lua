@@ -30,6 +30,7 @@ local str_format = string.format
 local ngx = ngx
 local ngx_var = ngx.var
 local events = require("apisix.events")
+local ai_token_quota = require("apisix.control.v1.ai_token_quota")
 
 
 local _M = {}
@@ -495,6 +496,12 @@ return {
         methods = {"PUT"},
         uris = {"/plugins/reload"},
         handler = _M.post_reload_plugins,
+    },
+    -- /v1/ai_token_quota
+    {
+        methods = {"GET"},
+        uris = {"/ai_token_quota"},
+        handler = ai_token_quota.get,
     },
     get_health_checkers = _get_health_checkers,
     reload_event = _M.RELOAD_EVENT,
