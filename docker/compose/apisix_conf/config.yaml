@@ -1,7 +1,3 @@
-#
-# APISIX configuration for Docker
-#
-
 deployment:
   role: traditional
   role_traditional:

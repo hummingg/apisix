@@ -10,5 +10,5 @@
       "extensions": ["ms-vscode.makefile-tools", "ms-azuretools.vscode-docker", "sumneko.lua"]
     }
   },
-  "forwardPorts": [9080, 9180, 2379]
+  "forwardPorts": [9080, 9180, 2379, 6379]
 }
