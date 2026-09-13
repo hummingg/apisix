@@ -92,3 +92,7 @@ t/node_modules/
 release/*
 
 
+
+# 本地开发产物
+dump.rdb
+test-nginx/
